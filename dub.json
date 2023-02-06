@@ -1,0 +1,12 @@
+{
+	"authors": [
+		"Lucius Seneca"
+	],
+	"dependencies": {
+		"requests": "~>2.0.9"
+	},
+	"copyright": "Copyright © 2023, Lucius Seneca",
+	"description": "A minimal D application.",
+	"license": "proprietary",
+	"name": "dlangweatherapi"
+}
