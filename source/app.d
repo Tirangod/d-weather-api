@@ -9,5 +9,5 @@ import std.datetime;
 void main() {
     auto api = WeatherAPI("fdf746bda16d40bba3680826230102");
     api.doRequest("Luxemburg", 2);
-    api.locationInfo.
+    writeln(api.forecastDays[1]);
 }

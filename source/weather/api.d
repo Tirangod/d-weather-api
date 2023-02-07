@@ -19,13 +19,14 @@ import weather.measureunits;
 import weather.timeutils;
 
 struct WeatherAPI {
-private:
-    class WeatherAPIException : Exception {
-        this(in string msg = "") {
-            super("Weather API Exception: " ~ msg);
-        }
+/*
+private class WeatherAPIException : Exception {
+    this(in string msg = "") {
+        super("Weather API Exception: " ~ msg);
     }
-
+}
+*/
+private:
     static const string formattedRequestString = "http://api.weatherapi.com/v1/forecast.json?key=%s&q=%s&days=%d&aqi=no&alerts=no";
 
     const string key_;
@@ -143,7 +144,7 @@ public:
     }
 
     string toString() const {
-        return (cast(string) forecast_);
+        return "WeatherAPI";
     }
 }
 
